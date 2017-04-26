@@ -1,0 +1,5 @@
+RewriteEngine On
+RewriteBase /
+RewriteCond %{HTTP_HOST} ^www.vizagstartups.in [NC]
+RewriteRule ^(.)$ http://vizagstartups.in/$1 [L,R=301]
+RewriteRule ^(Startups)$ http://vizagstartups.in/startups.html [L,R=301]
